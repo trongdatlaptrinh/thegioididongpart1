@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế Giới Di Động</title>
+    <link rel="shortcut icon" href="./imgs/favicontgdd.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome/fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="./imgs/logoheader.webp" alt="Logo qc">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href=""><img style="width: 150px;" src="./imgs/logotgdd.jfif" alt="Logo TGDD"></a></li>
+                <li id = "address-form"><a href="#"><button>Xem giá, tồn kho tại: Đà Nẵng<i class="fa-solid fa-sort-down"></i></button></a></li>
+                <li><a href="#"><input type="text" placeholder="Bạn tìm gì ..."><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><button>Tài khoản & Đơn hàng</button></a></li>
+                <li><a href="#"><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a></li>
+                <li><a href="#">24h Công nghệ</a></li>
+                <li><a href="#">Hỏi Đáp</a></li>
+                <li><a href="#">Game App</a></li>
+
+                <div class="address-form">
+                    <div class="address-form-content">
+                        <div class="top-address">
+                            <div style="font-size: 15px;"><p>Quý khách vui lòng cho biết </p><h3>Địa Chỉ Nhận Hàng </h3> <p>để biết chính xác thời gian giao hàng</p></div>
+                            <a id = "address-close" href="#"><i class="fa-solid fa-xmark"></i>Đóng</a>
+                        </div>
+                        <div class="search-address">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Nhập địa chỉ nhận hàng">
+                        </div>
+                    </div>
+                    <h2>Hoặc chọn tỉnh, thành phố</h2>
+                    <div class="list-item">
+                        <div class="list-location">
+                            <ul>
+                                <li>Hồ Chí Minh</li>
+                                <li>Hà Nội</li>
+                                <li>Đà Nẵng</li>
+                                <li>An Giang</li>
+                                <li>Bà Rịa - Vũng Tàu</li>
+                                <li>Bắc Giang</li>
+                                <li>Bắc Kanj</li>
+                                <li>Bạc Liêu</li>
+                                <li>Bắc Ninh</li>
+                                <li>Bến Tre</li>
+                                <li>Bình Định</li>
+                                <li>Bình Dương</li>
+                                <li>Bình Phước</li>
+                                <li>Bình Thuận</li>
+                                <li>Cà Mau</li>
+                                <li>Cần Thơ</li>
+                                <li>Cao Bằng</li>
+                                <li>Đăks Lăks</li>
+                                <li>Đăks Nông</li>
+                                <li>Điện Biên</li>
+                                <li>Đồng Nai</li>
+                                <li>Đồng Tháp</li>
+                                <li>Gia Lai</li>
+                                <li>Hà Giang</li>
+                                <li>Hà Nam</li>
+                                <li>Hà Tĩnh</li>
+                                <li>Hải Dương</li>
+                                <li>Hải Phòng</li>
+                                <li>Hậu Giang</li>
+                                <li>Hòa Bình</li>
+                                <li>Hưng Yên</li>
+                                <li>Khánh Hòa</li>
+                                <li>Kiên Giang</li>
+                                <li>Kon Tum</li>
+                                <li>Lai Châu</li>
+                                <li>Lâm Đồng</li>
+                                <li>Lạng Sơn</li>
+                                <li>Lào Cai</li>
+                                <li>Long An</li>
+                                <li>Nam Định</li>
+                                <li>Nghệ An</li>
+                                <li>Ninh Bình</li>
+                                <li>Ninh Thuận</li>
+                                <li>Phú Thọ</li>
+                                <li>Phú Yên</li>
+                                <li>Quảng Bình</li>
+                                <li>Quảng Nam</li>
+                                <li>Quảng Ninh</li>
+                                <li>Quảng Ngãi</li>
+                                <li>Quảng Trị</li>
+                                <li>Sóc Trăng</li>
+                                <li>Sơn La</li>
+                                <li>Tây Ninh</li>
+                                <li>Thái Bình</li>
+                                <li>Thái Nguyên</li>
+                                <li>Thanh Hóa</li>
+                                <li>Thừa Thiên Huế</li>
+                                <li>Tiền Giang</li>
+                                <li>Trà Vinh</li>
+                                <li>Tuyên Quang</li>
+                                <li>Vĩnh Long</li>
+                                <li>Vĩnh Phúc</li>
+                                <li>Yên Bái</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <section class="menu-bar">
+        <div class="container">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-mobile"></i>Điện thoại</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-laptop"></i>Laptop</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-tablet"></i>Tablet</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-headphones"></i>Phụ kiện<i style="margin-left: 5px; line-height: 70px;" class="fa-solid fa-sort-down"></i></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Sạc dự phòng</a></li>
+                                <li><a href="">Sạc, cáp</a></li>
+                                <li><a href="">Hub, cáp chuyển đổi</a></li>
+                                <li><a href="">Ốp lưng điện thoại</a></li>
+                                <li><a href="">Ốp lưng máy tính bảng</a></li>
+                                <li><a href="">Miếng dán</a></li>
+                                <li><a href="">Miếng dán camera</a></li>
+                                <li><a href="">Túi đựng AirPods</a></li>
+                                <li><a href="">AirTag, Vỏ bảo vệ AirTag</a></li>
+                                <li><a href="">Bút Tablet</a></li>
+                                <li><a href="">Giá đỡ điện thoại</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-stopwatch"></i>Smartwatch</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-clock"></i>Đồng hồ</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-mobile-retro"></i>Máy cũ, thu cũ<i style="margin-left: 5px; line-height: 70px;" class="fa-solid fa-sort-down"></i></a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Máy cũ giá rẻ</a></li>
+                                <li><a href="">Thu cũ đổi mới</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                    
+                    
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-desktop"></i>PC, Máy in<i style="margin-left: 5px; line-height: 70px;" class="fa-solid fa-sort-down"></i></a>
+                    
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Máy in</a></li>
+                                <li><a href="">Mực in</a></li>
+                                <li><a href="">Màn hình máy tính</a></li>
+                                <li><a href="">Máy tính để bàn</a></li>
+                                <li><a href="">Máy chơi game cầm tay</a></li>
+                                <li><a href="">Phần mềm</a></li>
+                            </ul>
+                        </div>
+                    
+                    
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-sim-card"></i>Sim, Thẻ cào</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-note-sticky"></i>Dịch vụ tiện ích</a><i style="margin-left: 5px; line-height: 70px;" class="fa-solid fa-sort-down"></i>
+                    
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="">Đóng tiền trả góp</a></li>
+                                <li><a href="">Đóng tiền điện</a></li>
+                                <li><a href="">Đóng tiền nước</a></li>
+                                <li><a href="">Đóng tiền NET FPT</a></li>
+                                <li><a href="">Đóng tiền net, cáp VNPT</a></li>
+                                <li><a href="">Vé tàu, xe, máy bay</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="big-qc">
+        <a href=""><img src="./imgs/Laptop-Gaming-Big-Desk-2-1920x450.webp" alt="Ảnh Laptop Gaming"></a>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- Các ảnh sản phẩm hot -->
+            <div class="hotproductsimg">
+                <img id = "item" src="./imgs/vivo.webp" alt="Ảnh điện thoại vivo">
+                <img id = "item" src="./imgs/xiaomi.webp" alt="Ảnh điện thoại xiaomi">
+                <img id = "item" src="./imgs/galaxy.webp" alt="Ảnh điện thoại samsung">
+                <img id = "item" src="./imgs/oppo.webp" alt="Ảnh điện thoại oppo">
+                <img id = "item" src="./imgs/sacduphong.webp" alt="Ảnh sạc dự phòng">
+                <img id = "item" src="./imgs/laptop.webp" alt="Ảnh laptop">
+                <img id = "item" src="./imgs/iphone.webp" alt="Ảnh điện thoại iphone">
+                <img id = "item" src="./imgs/applewatch.webp" alt="Ảnh đồng hồ applewatch">
+            </div>
+            <!-- Các nút trở lại và tiến lên -->
+            <div class="btn-left"><i class="fa-solid fa-chevron-left"></i></i></div>
+            <div class="btn-right"><i class="fa-solid fa-chevron-right"></i></i></div>
+        </div>
+    </main>
+
+    <ul class="directory">
+        <li><a href="#"><img src="./imgs/directory1.webp" alt=""></a>Smartphone Đặc Quyền</li>
+        <li><a href="#"><img src="./imgs/directory2.webp" alt=""></a>Phụ kiện giảm đến 50%</li>
+        <li><a href="#"><img src="./imgs/directory3.webp" alt=""></a>Đồng hồ sale Chỉ từ 266k</li>
+        <li><a href="#"><img src="./imgs/directory4.webp" alt=""></a>Săn Coupon cuối tuần</li>
+    </ul>
+
+    <div class="topqc">
+        <a href="#"><img src="./imgs/topqc.webp" alt="Ảnh topqc"></a>
+    </div>
+
+    <section class="lienhe"></section>
+
+    <div class="flashsale-block">
+        <div class="flashsale">
+            <div class="banner-img">
+                <img src="./imgs/DMX---Banner-Flash-sale---01-1200x120.gif" alt="Ảnh banner flash sale">
+                <div style="right: 530px; background-color: #BCB6B6;" class="timeline-title">
+                    <a href="#">Sắp diễn ra 00:00 - 07:59</a>
+                </div>
+                <div class="timeline-title">
+                    <a href="#">Đang diễn ra 08:00 - 20:59</a>
+                </div>
+            </div>
+        </div>
+        <div class="list-product">
+            <ul style="background-color: #000;" class="list-product-item">
+                <li>
+                    <a href="#">
+                    <img src="./imgs/galaxyimg.webp" alt="">
+                    <h3>Galaxy Z Fold 5</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/tai-nghe-bluetooth-tws-rezo-air-thumb-600x600.webp" alt=""></a>
+                    <h3>Tai-nghe-bluetooth-tws-rezo-air-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/camera-ip-360-do-1080p-tp-link-tapo-tc70-trang-thumb-2-600x600.webp" alt=""></a>
+                    <h3>Camera-ip-360-do-1080p-tp-link-tapo-tc70-trang-thumb-2</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/pin-sac-du-phong-10000mah-type-c-pd-qc3-0-20w-xmobile-y73-thumb-600x600.webp" alt=""></a>
+                    <h3>pin-sac-du-phong-10000mah-type-c</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/nakzen-sl9001lbk-7-nu-020422-043250-600x600.webp" alt=""></a>
+                    <h3>nakzen-sl9001lbk-7-nu-020422-043250</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/befit-watch-fit-hong-tn-600x600.webp" alt=""></a>
+                    <h3>befit-watch-fit-hong-tn</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/samsung-galaxy-z-flip5-mint-thumbnew-600x600.webp" alt=""></a>
+                    <h3>samsung-galaxy-z-flip5-mint-thumbnew</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/acer-aspire-3-a315-58-54xf-i5-nxam0sv007-thumb-600x600.webp" alt=""></a>
+                    <h3>acer-aspire-3-a315-58-54xf-i5-nxam0sv007-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/dong-ho-nam-orient-ra-ag0027y10b-0-600x600.webp" alt=""></a>
+                    <h3>dong-ho-nam-orient-ra-ag0027y10b</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/hp-victus-16-e1106ax-r5-7c0t1pa-thumb-1-600x600.webp" alt=""></a>
+                    <h3>hp-victus-16-e1106ax-r5-7c0t1pa-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/cap-lightning-1m-xmobile-l2205-thumb-1-600x600.webp" alt=""></a>
+                    <h3>cap-lightning-1m-xmobile-l2205-thumb-1-600x600</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/dong-ho-eco-drive-nu-day-kim-loai-citizen-ga1050-5-thumb-600x600.webp" alt=""></a>
+                    <h3>dong-ho-eco-drive-nu-day-kim-loai-citizen-ga1050-5-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b class="slotrate">Sắp mở bán</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flashsale-block">
+        <div class="flashsale">
+            <div class="banner-img">
+                <img src="./imgs/DMX---Banner-Flash-sale-1200x120-6.webp" alt="Ảnh banner flash sale">
+            </div>
+        </div>
+        <div class="list-product">
+            <ul class="list-product-item">
+                <li>
+                    <a href="#">
+                    <img src="./imgs/galaxyimg.webp" alt="">
+                    <h3>Galaxy Z Fold 5</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/tai-nghe-bluetooth-tws-rezo-air-thumb-600x600.webp" alt=""></a>
+                    <h3>Tai-nghe-bluetooth-tws-rezo-air-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/camera-ip-360-do-1080p-tp-link-tapo-tc70-trang-thumb-2-600x600.webp" alt=""></a>
+                    <h3>Camera-ip-360-do-1080p-tp-link-tapo-tc70-trang-thumb-2</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/pin-sac-du-phong-10000mah-type-c-pd-qc3-0-20w-xmobile-y73-thumb-600x600.webp" alt=""></a>
+                    <h3>pin-sac-du-phong-10000mah-type-c</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/nakzen-sl9001lbk-7-nu-020422-043250-600x600.webp" alt=""></a>
+                    <h3>nakzen-sl9001lbk-7-nu-020422-043250</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/befit-watch-fit-hong-tn-600x600.webp" alt=""></a>
+                    <h3>befit-watch-fit-hong-tn</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/samsung-galaxy-z-flip5-mint-thumbnew-600x600.webp" alt=""></a>
+                    <h3>samsung-galaxy-z-flip5-mint-thumbnew</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/acer-aspire-3-a315-58-54xf-i5-nxam0sv007-thumb-600x600.webp" alt=""></a>
+                    <h3>acer-aspire-3-a315-58-54xf-i5-nxam0sv007-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/dong-ho-nam-orient-ra-ag0027y10b-0-600x600.webp" alt=""></a>
+                    <h3>dong-ho-nam-orient-ra-ag0027y10b</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/hp-victus-16-e1106ax-r5-7c0t1pa-thumb-1-600x600.webp" alt=""></a>
+                    <h3>hp-victus-16-e1106ax-r5-7c0t1pa-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/cap-lightning-1m-xmobile-l2205-thumb-1-600x600.webp" alt=""></a>
+                    <h3>cap-lightning-1m-xmobile-l2205-thumb-1-600x600</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="./imgs/dong-ho-eco-drive-nu-day-kim-loai-citizen-ga1050-5-thumb-600x600.webp" alt=""></a>
+                    <h3>dong-ho-eco-drive-nu-day-kim-loai-citizen-ga1050-5-thumb</h3>
+                    <strong class="new-price">13.490.000d</strong>
+                    <p class="price-old-back">19.990.000d</p>
+                    <small>-32%</small>
+                    <b>Còn 18/20 suất</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="footer-top">
+            <div class="footer-col">
+                <ul class="list-menu">
+                    <li><a href="#">Tích điểm Quà tặng VIP</a></li>
+                    <li><a href="#">Lịch sử mua hàng</a></li>
+                    <li><a href="#">Tìm hiểu về mua trả góp</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Xem thêm <i class="fa-solid fa-caret-down"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul class="list-menu">
+                    <li><a href="#">Giới thiệu công ty (MWG.vn)</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Gửi góp ý, khiếu nại</a></li>
+                    <li><a href="#">Tìm siêu thị (3.136 shop)</a></li>
+                    <li><a href="#">Xem bản mobile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h2>Tổng đài hỗ trợ</h2>
+                <p class="listtel-content">Gọi mua: <a href="#">+84 868497716</a></p>
+                <p class="listtel-content">Khiếu nại: <a href="#">+84 868497716</a></p>
+                <p class="listtel-content">Bảo hành: <a href="#">+84 868497716</a></p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook">
+                        <span>3886.8k Fan</span>
+                    </i></a>
+                    <a href="#"><i class="fa-brands fa-youtube">
+                        <span>867k Đăng ký</span>
+                    </i></a>
+                    <a href="#"><i class="fa-brands fa-google">
+                        <span>Google TGDĐ</span>
+                    </i></a>
+                </div>
+                <div class="footer-certify">
+                    <a href="#"><i class="bocongthuong"></i></a>
+                    <a href="#"><i class="khieunai"></i></a>
+                    <a href="#"><i class="protected"></i></a>
+                    <a href="#"><img src="./imgs/handle_cert.png" alt="Ảnh logo tín nhiệm mạng"></a>
+                </div>
+                <div class="footer-website">
+                    <p>Website cùng tập đoàn</p>
+                    <a href="#"><i class="dienmayxanh"></i></a>
+                    <a href="#"><i class="bachhoaxanh"></i></a>
+                    <a href="#"><i class="nhathuocankhang"></i></a>
+                    <a href="#"><i class="vieclam"></i></a>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <section>
+                <p>
+                    © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. 
+                    GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.</p>
+            </section>
+        </div>
+    </footer>
+</body>
+    <script src="./js/main.js"></script>
+</html>

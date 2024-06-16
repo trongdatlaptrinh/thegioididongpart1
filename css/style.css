@@ -1,0 +1,687 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(255, 232, 185);
+    height: 44px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* container*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav,.menu-bar{
+    background-color: #ffd400;
+}
+
+/* nav */
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+nav ul li, a{
+    font-size: 12px;
+}
+
+nav ul li:nth-child(2) button,
+nav ul li:nth-child(4) button,
+nav ul li:nth-child(5) button{
+    background-color: rgba(255,172,10,.6);
+    cursor: pointer;
+    padding: 0 8px;
+    border: 1px solid #ffd400;
+    height: 60px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+nav ul li:nth-child(2) i{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+nav ul li:nth-child(3){
+    position: relative;
+}
+
+
+nav ul li:nth-child(3) input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+}
+
+nav ul li:nth-child(3) i{
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    line-height: 30px;
+}
+
+nav ul li:nth-child(2) button:hover,
+nav ul li:nth-child(4) button:hover,
+nav ul li:nth-child(5) button:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+
+nav ul li:nth-child(6):hover a,
+nav ul li:nth-child(7):hover a,
+nav ul li:nth-child(8):hover a{
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Menu-bar */
+
+.menu-bar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-bar{
+    padding: 12px 0;
+}
+
+.menu-bar ul li a{
+    font-size: 16px;
+}
+
+.menu-bar ul li a i{
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.menu-bar-content > ul > li{
+    padding: 12px 6px;
+    transition: all 0.3s ease;
+}
+
+.menu-bar ul li:hover a{
+    background-color: #ddd;
+    color: #000;
+}
+
+.menu-bar-content > ul > li:nth-child(9){
+    position: relative;
+}
+
+.menu-bar-content > ul > li:nth-child(9)::before a{
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: red;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    color: white;
+    padding-left: 3px;
+}
+
+.menu-bar-content > ul > li:nth-child(9)::after a{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 7px;
+    width: 7px;
+    background-color: #000;
+    border-radius: 5px;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+/* address form */
+
+.address-form{
+    position: fixed;
+    z-index: 100;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    display: none;
+}
+
+.address-form .address-form-content{
+    display: inline-block;
+    width: 500px;
+    background-color: #2f80ed;
+    white-space: normal;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.top-address{
+    padding: 0 0 10px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.top-address a{
+    border: 1px solid #e9f4fb;
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.top-address a i{
+    margin-right: 5px;
+}
+
+.search-address{
+    position: relative;
+    margin-top: 10px;
+}
+
+.search-address i{
+    position: absolute;
+    left: 7px;
+    top: 9px;
+}
+
+.search-address input{
+    width: 100%;
+    padding: 8px 28px 8px 28px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.address-form h2{
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+.list-location{
+    padding: 10px;
+    max-height: 40vh;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.list-location ul{
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 39vh;
+    overflow: auto;
+}
+
+.big-qc{
+    background-color: #ffd400;
+    text-align: center;
+}
+
+.big-qc a img{
+    max-width: 1200px;
+}
+
+/* submenu */
+
+
+.menu-bar-content ul li{
+    position: relative;
+
+}
+
+.submenu{
+    position: absolute;
+    background-color: #ddd;
+    width: 300px;
+    height: auto;
+    top: 100%;
+    left: 0;
+    padding: 12px;
+    display: none;
+}
+
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu ul li{
+    padding: 6px 0;
+}
+
+.submenu ul li:hover a{
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.submenu ul li:hover{
+    background: none;
+}
+
+.menu-bar-content ul li:hover .submenu{
+    display: block;
+}
+
+/* container */
+
+main{
+    margin-top: -50px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .hotproductsimg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .hotproductsimg img{
+    box-sizing: border-box;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+.container .btn-left{
+    top: -113px;
+    right: 21px;
+}
+
+.container .btn-right{
+    top: -155px;
+    right: -1178px;
+}
+
+
+.container .btn-left,
+.container .btn-right{
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 1px #8888;
+    position: relative;
+}
+
+.container .btn-left i,
+.container .btn-right i{
+    font-size: 30px;
+}
+
+/* directory */
+
+.directory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    margin: 0 0 30px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.directory li{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% / 4 - 20px);
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px 0;
+}
+
+.directory li img{
+    width: auto;
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.directory li:first-child{
+    margin-left: 10px;
+}
+
+/* topqc */
+
+.topqc{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+}
+
+/* lienhe */
+
+.lienhe{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    background-image: url(/TheGioiDiDongClone/imgs/logo-transperant-fotor-2024061753436.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99999999999;
+}
+
+/* flashsale */
+
+.flashsale-block{
+    display: block;
+}
+
+.flashsale{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-img{
+    position: relative;
+}
+
+.timeline-title{
+    position: absolute;
+    top: inherit;
+    bottom: 10%;
+    width: 20%;
+    right: 200px;
+    background-color: #FFE201;
+    border-radius: 15px;
+}
+
+.timeline-title a{
+    color: #000000;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+.list-product{
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.list-product-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    background-color: orange;
+}
+
+.list-product-item li {
+    width: calc(100%/6 - 15px);
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px; 
+}
+
+.list-product-item li img {
+    width: 100%; 
+    height: auto;
+}
+
+.list-product-item h3{
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.list-product-item .new-price{
+    color: #d0021c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.list-product-item .price-old-back{
+    color: #333;
+    margin: 0 auto 10px;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: line-through;
+}
+
+.list-product-item small{
+    padding-left: 3px;
+    margin-left: 0;
+    vertical-align: text-top;
+    color: #eb5757;
+    background: #fff0e9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.list-product-item b{
+    display: block;
+    position: relative;
+    z-index: 1;
+    font-weight: normal;
+    background-color: yellow;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.list-product .slotrate{
+    background-color: #f3f3f3;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* footer */
+
+.footer{
+    clear: both;
+    border-top: 1px solid #e2e2e2;
+    background-color: #fff;
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer .footer-top{
+    display: block;
+    padding: 15px 0 5px;
+}
+
+.footer-top .footer-col{
+    float: left;
+    width: 20%;
+}
+
+.footer-col a{
+    font-size: 15px;
+}
+
+.list-menu{
+    margin-bottom: 10px;
+}
+
+.list-menu a{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.listtel-content{
+    margin-top: 10px;
+}
+
+.footer-social{
+    margin-bottom: 20px;
+}
+
+.footer-social a{
+    margin-right: 20px;
+}
+
+.footer-social span{
+    margin-left: 10px;
+}
+
+.footer-top .footer-col:nth-last-child(1){
+    width: 40%;
+}
+
+
+.footer-certify .bocongthuong{
+    background-image: url(/TheGioiDiDongClone/imgs/icfooter.webp);
+    background-repeat: no-repeat;
+    background-position: -200px -30px;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    background-size: 300px 200px;
+    margin-right: 20px;
+}
+
+.footer-certify .khieunai{
+    background-image: url(/TheGioiDiDongClone/imgs/icfooter.webp);
+    background-repeat: no-repeat;
+    background-position: -250px 0;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: 300px 200px;
+    margin-right: 20px;
+}
+
+.footer-certify .protected{
+    background-image: url(/TheGioiDiDongClone/imgs/icfooter.webp);
+    background-repeat: no-repeat;
+    background-position: -80px -60px;
+    width: 122px;
+    height: 25px;
+    display: inline-block;
+    background-size: 300px 200px;
+    margin-right: 20px;
+}
+
+.footer-certify img{
+    width: 85px;
+    height: auto;
+}
+
+
+.footer-website{
+    margin-top: 20px;
+}
+
+.footer-website .dienmayxanh{
+    background-image: url(/TheGioiDiDongClone/imgs/Logo-webmoi.jpg);
+    background-repeat: no-repeat;
+    background-position: -85px 0;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    background-size: 250px 200px;
+    margin-right: 20px;
+}
+
+.footer-website .bachhoaxanh{
+    background-image: url(/TheGioiDiDongClone/imgs/Logo-webmoi.jpg);
+    background-repeat: no-repeat;
+    background-position: -170px 0;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    background-size: 250px 200px;
+    margin-right: 20px;
+}
+
+.footer-website .nhathuocankhang{
+    background-image: url(/TheGioiDiDongClone/imgs/Logo-webmoi.jpg);
+    background-repeat: no-repeat;
+    background-position: -85px -90px;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    background-size: 250px 200px;
+    margin-right: 20px;
+}
+
+.footer-website .vieclam{
+    background-image: url(/TheGioiDiDongClone/imgs/Logo-webmoi.jpg);
+    background-repeat: no-repeat;
+    background-position: -80px -60px;
+    width: 80px;
+    height: 25px;
+    display: inline-block;
+    background-size: 250px 200px;
+    margin-right: 20px;
+}
+
+.copyright{
+    margin-top: 150px;
+    background-color: #f1f1f1;
+    padding: 15px 0;
+}
+
+.copyright p{
+    font-size: 10px;
+}
